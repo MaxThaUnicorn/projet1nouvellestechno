@@ -9,20 +9,6 @@ jobs:
   deploy:
     runs-on: debian-latest
 
-    strategy:
-      matrix:
-        server_ip:
-          - 4.213.100.8
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Install Nginx on Server
-        run: |
-          ssh -i ~/.ssh/id_rsa  -o StrictHostKeyChecking=no suresh@${{ matrix.server_ip }} 'sudo apt-get update && sudo apt-get install -y nginx'
+      - name: commit-changes
+      
