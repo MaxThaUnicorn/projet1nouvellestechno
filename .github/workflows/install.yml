@@ -9,6 +9,5 @@ jobs:
   deploy:
     runs-on: debian-latest
 
-    steps:
-      - name: commit-changes
+
       
