@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: debian-latest
-
-
-      
+    steps:
+    - run: |
+        cd /var/www/jaxnel.top/html/projet1nouvellestechno
+        git pull origin main
