@@ -10,6 +10,4 @@ jobs:
     runs-on: self-hosted
     steps:
     - run: |
-        cd
-        cd /var/www/jaxnel.top/html/projet1nouvellestechno
-        git pull origin main
+        git -C /var/www/jaxnel.top/html/projet1nouvellestechno pull origin main
