@@ -1,4 +1,4 @@
-name: Install Nginx on Servers in multiple
+name: Push modifs sur serveur
 
 on:
   push:
